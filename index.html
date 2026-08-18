@@ -14,95 +14,66 @@
 <body>
   <canvas id="leaves" aria-hidden="true"></canvas>
 
-  <div class="scene" aria-hidden="true">
-    <svg class="birches" viewBox="0 0 1440 640" preserveAspectRatio="xMidYMax slice">
-      <g class="birch-group">
-        <g class="birch">
-          <rect x="200" y="60" width="22" height="580" rx="11" fill="#e8e4d8"/>
-          <rect x="205" y="60" width="4" height="580" fill="#3a332a" opacity="0.55"/>
-          <rect x="212" y="60" width="3" height="580" fill="#3a332a" opacity="0.45"/>
-        </g>
-        <g class="birch">
-          <rect x="420" y="20" width="30" height="620" rx="15" fill="#efece2"/>
-          <rect x="426" y="20" width="6" height="620" fill="#3a332a" opacity="0.5"/>
-          <rect x="438" y="20" width="4" height="620" fill="#3a332a" opacity="0.4"/>
-        </g>
-        <g class="birch">
-          <rect x="660" y="0" width="26" height="640" rx="13" fill="#e8e4d8"/>
-          <rect x="666" y="0" width="5" height="640" fill="#3a332a" opacity="0.5"/>
-        </g>
-        <g class="birch">
-          <rect x="930" y="40" width="28" height="600" rx="14" fill="#efece2"/>
-          <rect x="936" y="40" width="6" height="600" fill="#3a332a" opacity="0.45"/>
-        </g>
-        <g class="birch">
-          <rect x="1180" y="10" width="24" height="630" rx="12" fill="#e8e4d8"/>
-          <rect x="1186" y="10" width="5" height="630" fill="#3a332a" opacity="0.5"/>
-        </g>
-      </g>
-      <g class="canopy">
-        <ellipse cx="430" cy="70" rx="200" ry="120" fill="#173a26" opacity="0.9"/>
-        <ellipse cx="660" cy="40" rx="240" ry="130" fill="#1a422c" opacity="0.9"/>
-        <ellipse cx="950" cy="80" rx="210" ry="120" fill="#173a26" opacity="0.9"/>
-        <ellipse cx="1190" cy="60" rx="220" ry="130" fill="#1a422c" opacity="0.9"/>
-      </g>
-    </svg>
-  </div>
-
   <main class="content">
-    <header class="brand">
-      <div class="logo-mark">
-        <svg viewBox="0 0 64 64" fill="none">
-          <path d="M32 6c9 6 15 18 13 31-1 10-7 18-13 20-6-2-12-10-13-20-2-13 4-25 13-31z" fill="#e6c47a"/>
-          <path d="M32 6c-4 12-4 26 0 51" stroke="#b58a3c" stroke-width="2.4" stroke-linecap="round"/>
-          <path d="M32 20c6 2 10 6 11 12" stroke="#b58a3c" stroke-width="1.8" stroke-linecap="round"/>
-          <path d="M32 34c-5 3-8 7-8 13" stroke="#b58a3c" stroke-width="1.8" stroke-linecap="round"/>
-        </svg>
-      </div>
-      <p class="brand-name-ru">РУССКИЙ РЕСТОРАН</p>
-      <p class="brand-name">Russian Restaurant</p>
-      <p class="brand-tagline">Русская кухня · Russian Kitchen</p>
-    </header>
+    <div class="stage">
+      <section class="card">
+        <header class="brand">
+          <div class="logo-mark">
+            <svg viewBox="0 0 64 64" fill="none">
+              <path d="M32 6c9 6 15 18 13 31-1 10-7 18-13 20-6-2-12-10-13-20-2-13 4-25 13-31z" fill="#f8b203"/>
+              <path d="M32 6c-4 12-4 26 0 51" stroke="#b58a3c" stroke-width="2.4" stroke-linecap="round"/>
+              <path d="M32 20c6 2 10 6 11 12" stroke="#b58a3c" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M32 34c-5 3-8 7-8 13" stroke="#b58a3c" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p class="brand-name-ru">РУССКИЙ РЕСТОРАН</p>
+          <p class="brand-name">Russian Restaurant</p>
+          <p class="brand-tagline">Русская кухня · Russian Kitchen</p>
+        </header>
 
-    <section class="card">
-      <p class="eyebrow">Скоро открытие</p>
-      <h1 class="title">Coming Soon</h1>
-      <p class="subtitle">A taste of Russia in the heart of Karnataka. Handcrafted dumplings, dark rye bread and warm evenings — arriving soon.</p>
+        <p class="eyebrow">Скоро открытие</p>
+        <h1 class="title">Coming Soon</h1>
+        <p class="subtitle">A taste of Russia in the heart of Karnataka. Handcrafted dumplings, dark rye bread and warm evenings — arriving soon.</p>
 
-      <div class="location">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-          <path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/>
-          <circle cx="12" cy="10" r="2.6"/>
-        </svg>
-        <span>Bengaluru, India</span>
-        <span class="location-ru">Бангалор, Индия</span>
-      </div>
-
-      <div class="divider"><span></span></div>
-
-      <p class="invite">Be the first to know when our doors open.</p>
-      <form id="notify" novalidate>
-        <input type="email" id="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
-        <button type="submit">Notify Me</button>
-      </form>
-      <p id="form-msg" class="form-msg" role="status"></p>
-
-      <div class="socials">
-        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+        <div class="location">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <rect x="3" y="3" width="18" height="18" rx="5"/>
-            <circle cx="12" cy="12" r="4"/>
-            <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/>
+            <path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/>
+            <circle cx="12" cy="10" r="2.6"/>
           </svg>
-        </a>
-        <a href="mailto:hello@yablokolabs.com" aria-label="Email us">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <rect x="3" y="5" width="18" height="14" rx="2"/>
-            <path d="m3 7 9 6 9-6"/>
-          </svg>
-        </a>
-      </div>
-    </section>
+          <span>Bengaluru, India</span>
+          <span class="location-ru">Бангалор, Индия</span>
+        </div>
+
+        <div class="divider"><span></span></div>
+
+        <p class="invite">Be the first to know when our doors open.</p>
+        <form id="notify" novalidate>
+          <input type="email" id="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
+          <button type="submit">Notify Me</button>
+        </form>
+        <p id="form-msg" class="form-msg" role="status"></p>
+
+        <div class="socials">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="mailto:sales@yablokolabs.com" aria-label="Email us">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="m3 7 9 6 9-6"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <figure class="hero">
+        <img src="images/hero.png" alt="Illustration of Russian architecture">
+      </figure>
+    </div>
 
     <footer class="foot">
       <p>Русский ресторан · Russian Restaurant · Bengaluru, India</p>
