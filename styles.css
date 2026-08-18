@@ -128,6 +128,13 @@ body {
   color: var(--text-dim);
 }
 
+.subtitle-line {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--gold-soft);
+}
+
 .location {
   display: flex;
   align-items: center;
