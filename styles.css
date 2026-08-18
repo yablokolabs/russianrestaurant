@@ -14,10 +14,7 @@ html, body { height: 100%; }
 body {
   font-family: "Inter", system-ui, sans-serif;
   color: var(--birch);
-  background:
-    radial-gradient(1100px 700px at 75% 40%, rgba(56, 92, 60, 0.55) 0%, transparent 55%),
-    radial-gradient(900px 600px at 15% 90%, rgba(10, 24, 14, 0.9) 0%, transparent 60%),
-    linear-gradient(180deg, var(--pine-800) 0%, #23402a 50%, var(--pine-900) 100%);
+  background: #2d4d31 url(Russian_Restaurant.png) no-repeat center center / cover;
   min-height: 100vh;
   overflow-x: hidden;
   position: relative;
@@ -47,7 +44,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3.5rem;
   width: min(1080px, 100%);
 }
 
@@ -225,28 +221,6 @@ body {
 
 .form-msg.error { color: #e08a7c; }
 
-.hero {
-  flex: 0 0 auto;
-  width: 340px;
-  position: relative;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: -30px;
-  background: radial-gradient(closest-side, rgba(248, 178, 3, 0.14) 0%, transparent 70%);
-  filter: blur(10px);
-}
-
-.hero img {
-  position: relative;
-  width: 100%;
-  height: auto;
-  display: block;
-  filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.5));
-}
-
 .gallery {
   width: min(1080px, 100%);
   margin-top: 3.5rem;
@@ -337,7 +311,6 @@ body {
     flex-direction: column;
     gap: 2rem;
   }
-  .hero { width: min(300px, 70%); }
 }
 
 @media (max-width: 520px) {
@@ -345,7 +318,6 @@ body {
   .card { padding: 1.9rem 1.3rem; }
   #notify { flex-direction: column; }
   #notify button { width: 100%; }
-  .hero { width: min(260px, 80%); }
   .brand-name-ru { font-size: 1.55rem; letter-spacing: 0.08em; }
   .location { flex-wrap: wrap; }
 }
