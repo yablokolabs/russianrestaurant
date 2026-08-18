@@ -225,31 +225,6 @@ body {
 
 .form-msg.error { color: #e08a7c; }
 
-.socials {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-.socials a {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  border: 1px solid rgba(248, 178, 3, 0.25);
-  color: var(--gold-soft);
-  transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
-}
-
-.socials a:hover {
-  background: rgba(248, 178, 3, 0.12);
-  transform: translateY(-2px);
-}
-
-.socials svg { width: 19px; height: 19px; }
-
 .hero {
   flex: 0 0 auto;
   width: 340px;
