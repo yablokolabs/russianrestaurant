@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yabloko · Russian Restaurant — Coming Soon, Bengaluru</title>
+  <meta name="description" content="Yabloko — an authentic Russian restaurant coming soon to Bengaluru, India. Скорo открытие. Follow us for the grand opening.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍎</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="leaves" aria-hidden="true"></canvas>
+
+  <div class="scene" aria-hidden="true">
+    <svg class="birches" viewBox="0 0 1440 640" preserveAspectRatio="xMidYMax slice">
+      <g class="birch-group">
+        <g class="birch">
+          <rect x="200" y="60" width="22" height="580" rx="11" fill="#e8e4d8"/>
+          <rect x="205" y="60" width="4" height="580" fill="#3a332a" opacity="0.55"/>
+          <rect x="212" y="60" width="3" height="580" fill="#3a332a" opacity="0.45"/>
+        </g>
+        <g class="birch">
+          <rect x="420" y="20" width="30" height="620" rx="15" fill="#efece2"/>
+          <rect x="426" y="20" width="6" height="620" fill="#3a332a" opacity="0.5"/>
+          <rect x="438" y="20" width="4" height="620" fill="#3a332a" opacity="0.4"/>
+        </g>
+        <g class="birch">
+          <rect x="660" y="0" width="26" height="640" rx="13" fill="#e8e4d8"/>
+          <rect x="666" y="0" width="5" height="640" fill="#3a332a" opacity="0.5"/>
+        </g>
+        <g class="birch">
+          <rect x="930" y="40" width="28" height="600" rx="14" fill="#efece2"/>
+          <rect x="936" y="40" width="6" height="600" fill="#3a332a" opacity="0.45"/>
+        </g>
+        <g class="birch">
+          <rect x="1180" y="10" width="24" height="630" rx="12" fill="#e8e4d8"/>
+          <rect x="1186" y="10" width="5" height="630" fill="#3a332a" opacity="0.5"/>
+        </g>
+      </g>
+      <g class="canopy">
+        <ellipse cx="430" cy="70" rx="200" ry="120" fill="#173a26" opacity="0.9"/>
+        <ellipse cx="660" cy="40" rx="240" ry="130" fill="#1a422c" opacity="0.9"/>
+        <ellipse cx="950" cy="80" rx="210" ry="120" fill="#173a26" opacity="0.9"/>
+        <ellipse cx="1190" cy="60" rx="220" ry="130" fill="#1a422c" opacity="0.9"/>
+      </g>
+    </svg>
+  </div>
+
+  <main class="content">
+    <header class="brand">
+      <div class="logo-mark">
+        <svg viewBox="0 0 64 64" fill="none">
+          <path d="M32 14C22 14 14 22 14 32s8 18 18 18 18-8 18-18-8-18-18-18z" fill="#c73e3a"/>
+          <path d="M32 14C30 8 25 6 20 6c-1 5 2 10 12 12 1-2 0-3 0-4z" fill="#7a5230"/>
+          <path d="M18 32c0-5 2-9 6-12-5 2-9 6-9 12" fill="#a8322e"/>
+          <path d="M24 26c6-4 14-4 16 0" stroke="#8f8f5f" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <p class="brand-name-ru">ЯБЛОКО</p>
+      <p class="brand-name">YABLOKO</p>
+      <p class="brand-tagline">Русская кухня · Russian Kitchen</p>
+    </header>
+
+    <section class="card">
+      <p class="eyebrow">Скоро открытие</p>
+      <h1 class="title">Coming Soon</h1>
+      <p class="subtitle">A taste of Russia in the heart of Karnataka. Handcrafted dumplings, dark rye bread and warm evenings — arriving soon.</p>
+
+      <div class="location">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/>
+          <circle cx="12" cy="10" r="2.6"/>
+        </svg>
+        <span>Bengaluru, India</span>
+        <span class="location-ru">Бангалор, Индия</span>
+      </div>
+
+      <div class="divider"><span></span></div>
+
+      <p class="invite">Be the first to know when our doors open.</p>
+      <form id="notify" novalidate>
+        <input type="email" id="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
+        <button type="submit">Notify Me</button>
+      </form>
+      <p id="form-msg" class="form-msg" role="status"></p>
+
+      <div class="socials">
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="mailto:hello@yablokolabs.com" aria-label="Email us">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="m3 7 9 6 9-6"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <p>Яблоко · Yabloko — «apple» in Russian · Bengaluru, India</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
